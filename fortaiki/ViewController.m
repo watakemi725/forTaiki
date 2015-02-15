@@ -55,7 +55,6 @@
     btn3.titleLabel.text=[NSString stringWithFormat:@"%@",nameString[2]];
     
     answerLabel.text=[NSString stringWithFormat:@"%@",name];
-    
 }
 
 -(IBAction)pushBtn1{
