@@ -40,7 +40,7 @@
         
     }
     
-
+    
     
     // 配列をランダムに並び替える
     for (int i=0; i<[nameString count]; i++)
@@ -48,7 +48,6 @@
         int j = arc4random() % 3;
         [nameString exchangeObjectAtIndex:i withObjectAtIndex:j];
     }
-    
     
     btn1.titleLabel.text=[NSString stringWithFormat:@"%@",nameString[0]];
     btn2.titleLabel.text=[NSString stringWithFormat:@"%@",nameString[1]];
