@@ -40,8 +40,6 @@
         
     }
     
-    
-    
     // 配列をランダムに並び替える
     for (int i=0; i<[nameString count]; i++)
     {
