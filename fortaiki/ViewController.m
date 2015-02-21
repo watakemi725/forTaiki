@@ -34,7 +34,7 @@
 
         if (fixnum==num) {
             //数字が重なった、もっかいランダム
-            [self makeRandom];
+            
             
         }else{
             //数字重なってない
@@ -44,8 +44,7 @@
             birdamount++;
         
             NSLog(@"鳥さん%d",num);
-            [self makeRandom];
-        
+            
         }
         
     }while (reba);
