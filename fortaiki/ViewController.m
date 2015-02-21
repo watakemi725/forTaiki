@@ -19,9 +19,42 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     
+    //toこうた
+    
+    
+    num = 0;
+    reba = true;
+    birdamount = 0;
+    
+    fixnum = arc4random_uniform(4)+1;
+    NSLog(@"正解は鳥%d",fixnum);
+    
+    do{
+        [self makeRandom];
+
+        if (fixnum==num) {
+            //数字が重なった、もっかいランダム
+            [self makeRandom];
+            
+        }else{
+            //数字重なってない
+            if (birdamount >= 10) {
+                reba = false;
+            }
+            birdamount++;
+        
+            NSLog(@"鳥さん%d",num);
+            [self makeRandom];
+        
+        }
+        
+    }while (reba);
     
 }
 
+-(void)makeRandom{
+    num = arc4random_uniform(4)+1;
+}
 
 -(IBAction)randombtn{
     

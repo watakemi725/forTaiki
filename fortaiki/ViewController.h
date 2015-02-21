@@ -21,6 +21,14 @@
     
     IBOutlet UILabel *hanteiLabel;
     IBOutlet UILabel *answerLabel;
+    
+    
+    bool reba;
+    int fixnum;
+    int random;
+    int num ;
+    int birdamount;
+    
 }
 
 -(IBAction)randombtn;
